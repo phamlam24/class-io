@@ -1,0 +1,112 @@
+[
+  {
+    "course_code": "CS160",
+    "title": "Lab posted and few updates",
+    "announcement": {
+      "date": "2025-11-12",
+      "lab_session": "Lab mission updated with extended deadline.",
+      "office_hour": null,
+      "curve": null,
+      "sample_test": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "General Update",
+    "announcement": {
+      "date": "2025-11-10",
+      "office_hour": "Office hours extended next week.",
+      "sample_test": null,
+      "lab_session": null,
+      "curve": "Median adjusted to 75 after Midterm 1."
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Second Midterm Reminder",
+    "announcement": {
+      "date": "2025-11-07",
+      "sample_test": "Midterm topics revised.",
+      "lab_session": null,
+      "office_hour": null,
+      "curve": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Office Hours Online Today",
+    "announcement": {
+      "date": "2025-11-06",
+      "office_hour": "Office hours moved online due to instructor conflict.",
+      "lab_session": null,
+      "curve": null,
+      "sample_test": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Sample midterm posted",
+    "announcement": {
+      "date": "2025-11-01",
+      "sample_test": "Sample midterm updated with corrections.",
+      "curve": null,
+      "lab_session": null,
+      "office_hour": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Project posted",
+    "announcement": {
+      "date": "2025-10-31",
+      "lab_session": "Project guidelines slightly updated.",
+      "office_hour": null,
+      "sample_test": null,
+      "curve": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Lab 7 posted",
+    "announcement": {
+      "date": "2025-10-25",
+      "lab_session": "Lab 7 instructions revised.",
+      "office_hour": null,
+      "sample_test": null,
+      "curve": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Few updates + lab posted",
+    "announcement": {
+      "date": "2025-10-17",
+      "lab_session": "Lab 6 modified due to student feedback.",
+      "office_hour": null,
+      "sample_test": null,
+      "curve": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "Course Update",
+    "announcement": {
+      "date": "2025-10-14",
+      "office_hour": "Office hours canceled due to department meeting.",
+      "lab_session": null,
+      "sample_test": null,
+      "curve": null
+    }
+  },
+  {
+    "course_code": "CS160",
+    "title": "No in-person lecture tomorrow",
+    "announcement": {
+      "date": "2025-10-12",
+      "lab_session": "Lab session moved asynchronously.",
+      "office_hour": null,
+      "sample_test": null,
+      "curve": "Updated grading curve after Midterm 1."
+    }
+  }
+]

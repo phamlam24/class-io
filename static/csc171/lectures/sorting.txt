@@ -1,0 +1,32 @@
+Sorting Algorithms – Concise Overview
+
+Sorting algorithms arrange elements in a specific order (usually ascending).
+
+1. Bubble Sort
+- Repeatedly swaps adjacent elements if out of order.
+- Time: O(n²), Space: O(1)
+
+2. Selection Sort
+- Repeatedly selects the smallest element and places it in order.
+- Time: O(n²), Space: O(1)
+
+3. Insertion Sort
+- Inserts each element into its correct position in the sorted portion.
+- Time: O(n²), Space: O(1)
+- Fast for nearly sorted input.
+
+4. Merge Sort
+- Divide-and-conquer: splits list, sorts halves, merges.
+- Time: O(n log n), Space: O(n)
+- Stable and efficient.
+
+5. Quick Sort
+- Chooses a pivot, partitions, recursively sorts.
+- Time: avg O(n log n), worst O(n²), Space: O(log n)
+- Very fast in practice.
+
+6. Heap Sort
+- Uses a binary heap to repeatedly extract max/min.
+- Time: O(n log n), Space: O(1)
+
+Selecting a sorting algorithm depends on input size, memory needs, and stability requirements.

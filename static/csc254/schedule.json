@@ -1,0 +1,265 @@
+{
+  "course_code": "CSC 254",
+  "title": "Course Schedule",
+  "schedule": [
+    {
+      "date": "Mon. Aug. 25 2025",
+      "topic": "Introduction",
+      "readings": ["PLP 1.0--1.5"],
+      "assignments": ["T0: administration; A0: Unix tools"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Aug. 27 2025",
+      "topic": "Structure of a compiler",
+      "readings": ["PLP 1.6--1.7"],
+      "assignments": ["T0 due; A1/T1: comparing languages; Q1 and T1 due Friday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Sep. 1 2025",
+      "topic": "Labor Day (no class)",
+      "readings": [],
+      "assignments": [],
+      "notes": [],
+      "no_class": true,
+      "type": "no_class"
+    },
+    {
+      "date": "Wed. Sep. 3 2025",
+      "topic": "Review of scanning and of CFGs",
+      "readings": ["PLP 2.0--2.2; CS 2.4.0--2.4.1"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Sep. 8 2025",
+      "topic": "Top-down and bottom-up parsing; recursive descent",
+      "readings": ["PLP 2.3.0--2.3.2"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Sep. 10 2025",
+      "topic": "Table-driven LL(1) parsing; error recovery",
+      "readings": ["PLP 2.3.3, 2.5; CS 2.3.5 (pp. 1--6)"],
+      "assignments": ["Q2 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Sep. 15 2025",
+      "topic": "Binding time, scope rules",
+      "readings": ["PLP 3.0--3.4"],
+      "assignments": ["A1 due Tuesday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Sep. 17 2025",
+      "topic": "Binding rules, separate compilation",
+      "readings": ["PLP 3.5--3.9; CS 3.8"],
+      "assignments": ["A2/T2: table-driven parsing and error recovery; Q3 due; T2 due Friday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Sep. 22 2025",
+      "topic": "Syntax trees, action routines",
+      "readings": ["PLP 4.0--4.2"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Sep. 24 2025",
+      "topic": "Formal semantics",
+      "readings": ["PLP 4.3--4.5 (skim), 4.7"],
+      "assignments": ["Q4 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Sep. 29 2025",
+      "topic": "Intro to OCaml",
+      "readings": ["PLP 11.0--11.2, 7.4--7.5, 8.6, 11.4"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Oct. 1 2025",
+      "topic": "Evaluation order, higher-order functions",
+      "readings": ["PLP 11.5--11.6, 11.8--11.9"],
+      "assignments": ["Q5 due; A2 due Sunday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Oct. 6 2025",
+      "topic": "Expressions, sequencing, and selection",
+      "readings": ["PLP 6.0--6.4"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Oct. 8 2025",
+      "topic": "Midterm Exam (in class)",
+      "readings": [],
+      "assignments": [],
+      "notes": [],
+      "type": "exam"
+    },
+    {
+      "date": "Mon. Oct. 13 2025",
+      "topic": "Fall Break (no class)",
+      "readings": [],
+      "assignments": [],
+      "notes": [],
+      "no_class": true,
+      "type": "no_class"
+    },
+    {
+      "date": "Wed. Oct. 15 2025",
+      "topic": "Iteration and recursion",
+      "readings": ["PLP 6.5--6.8"],
+      "assignments": ["A3/T3: interpretation; Q6 due; T3 due Friday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Oct. 20 2025",
+      "topic": "Type systems, type checking",
+      "readings": ["PLP 7.0--7.2"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Oct. 22 2025",
+      "topic": "Polymorphism/Generics",
+      "readings": ["PLP 7.3, 7.6; CS 7.3.5"],
+      "assignments": ["Q7 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Oct. 27 2025",
+      "topic": "Stack management; parameter passing",
+      "readings": ["PLP 9.0--9.3"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Oct. 29 2025",
+      "topic": "Exceptions, events, & asynchronous programming",
+      "readings": ["PLP 9.4, 9.6--9.8"],
+      "assignments": ["Q8 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Nov. 3 2025",
+      "topic": "Threads",
+      "readings": ["PLP 13.0--13.2.3, 9.5, 13.2.4"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Nov. 5 2025",
+      "topic": "Synchronization",
+      "readings": ["PLP 13.3"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Nov. 10 2025",
+      "topic": "Language mechanisms",
+      "readings": ["PLP 13.4, 13.6"],
+      "assignments": ["Q9 due; A3 due Tuesday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Nov. 12 2025",
+      "topic": "Records and arrays",
+      "readings": ["PLP 8.0--8.4"],
+      "assignments": ["A4/T4: concurrency; T4 due Sunday evening"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Nov. 17 2025",
+      "topic": "Pointers, references, and dynamic storage management",
+      "readings": ["PLP 8.5, 8.8"],
+      "assignments": ["Q10 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Nov. 19 2025",
+      "topic": "Scoping; constructors & destructors; virtual methods",
+      "readings": ["PLP 10.0--10.5, 10.8"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Nov. 24 2025",
+      "topic": "Pattern matching; scripting objects",
+      "readings": ["PLP 14.0--14.1, 14.4--14.5"],
+      "assignments": ["Q11 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Nov. 26 2025",
+      "topic": "Thanksgiving Break (no class)",
+      "readings": [],
+      "assignments": [],
+      "notes": [],
+      "no_class": true,
+      "type": "no_class"
+    },
+    {
+      "date": "Mon. Dec. 1 2025",
+      "topic": "Code generation, assembly",
+      "readings": ["PLP 15.0--15.3, 15.5"],
+      "assignments": [],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Wed. Dec. 3 2025",
+      "topic": "Linking; the JVM",
+      "readings": ["PLP 15.6, 16.0--16.1.1"],
+      "assignments": ["Q12 due"],
+      "notes": [],
+      "type": "lecture"
+    },
+    {
+      "date": "Mon. Dec. 8 2025",
+      "topic": "Last day of class: questions, final exam prep",
+      "readings": [],
+      "assignments": ["A4 due Wednesday evening"],
+      "notes": [],
+      "type": "review"
+    },
+    {
+      "date": "Sun. Dec. 14 2025",
+      "topic": "Final exam, 12:30--3:30 pm",
+      "readings": [],
+      "assignments": [],
+      "notes": ["Official time slot, in CS1400"],
+      "type": "exam"
+    }
+  ]
+}

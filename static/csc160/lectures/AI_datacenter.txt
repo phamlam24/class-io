@@ -1,0 +1,49 @@
+AI DATACENTERS — SUMMARY (TXT)
+
+Course: CSC 160 — AI for All
+Date: Nov 4, 2025
+
+TOPICS:
+- AI's impact on electricity and water usage
+- US power grid overview
+- Data center construction delays
+- Environmental facts & comparisons
+- High-level industry responses (Google, Microsoft, xAI)
+- Water/energy cost of LLM inference and training
+
+AI MISINFORMATION + NOTES:
+- Examples of AI-generated misinformation in political news.
+- Discussion of AI music ethics and ecosystem damage.
+
+US POWER GRID:
+- US generates ~4,200 billion kWh (~480 GW average).
+- Total US energy usage ~3,400 GW.
+- AI datacenter growth increasing overall grid demand.
+
+WATER & ENERGY COST OF AI:
+- “Making AI Less Thirsty” research:
+  • Training GPT-3 can evaporate ~700,000 liters of fresh water.
+  • Future AI demand may consume 4.2–6.6 billion m³ water/year globally.
+  • Approx: 1 medium ChatGPT conversation = 10–50 responses = 500 mL water (older estimate).
+- Updated numbers (Altman 2025):
+  • ChatGPT prompt: ~0.34 Wh, ~0.3 mL water.
+  • Google Gemini: ~0.24 Wh, ~0.26 mL water.
+  • Google Datacenters WUE ≈ 1.15 L/kWh.
+
+ENVIRONMENTAL CONTEXT:
+- Household leaks waste 900 billion gallons/year.
+- Golf courses consume ~2.08 billion gallons/day.
+
+DATA CENTER BOTTLENECKS:
+- Santa Clara: massive AI datacenter projects delayed due to lack of electrical capacity.
+- Similar problems nationwide: permitting, grid upgrades, transformer shortages.
+
+MEGA-DATACENTERS:
+- Meta’s Manhattan-scale “Lego block” datacenter analogy: extremely large volumes.
+- Microsoft & Google investing in new nuclear-powered datacenters.
+- xAI “Colossus” project; Google exploring orbital data centers.
+
+OVERALL THEMES:
+- AI demand is outpacing grid upgrade speed.
+- Water usage is a growing environmental concern.
+- Industry exploring alternative energy sources (nuclear, space-based).

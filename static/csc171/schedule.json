@@ -1,0 +1,254 @@
+{
+  "course_code": "CSC 171",
+  "title": "CSC 171 Course Schedule",
+  "term": "Fall 2025",
+  "schedule": [
+    {
+      "date": "Aug 25, 2025",
+      "type": "lecture",
+      "topic": "Administrivia, Introduction, Python Basics",
+      "materials": [
+        "L1(1)",
+        "L1(2)",
+        "IN1"
+      ]
+    },
+    {
+      "date": "Aug 27, 2025",
+      "type": "lecture",
+      "topic": "Variables, Data Types, Conditionals",
+      "materials": [
+        "L2(1)",
+        "L2(2)",
+        "IN2_1",
+        "IN2_2"
+      ]
+    },
+    {
+      "date": "Sep 1, 2025",
+      "type": "no_class",
+      "topic": "No Lecture (Labor Day)",
+      "materials": []
+    },
+    {
+      "date": "Sep 3, 2025",
+      "type": "lecture",
+      "topic": "Functions, Parameters, Arguments, Scope",
+      "materials": [
+        "L3(1)"
+      ]
+    },
+    {
+      "date": "Sep 8, 2025",
+      "type": "lecture",
+      "topic": "Iteration, Loops, Invariants",
+      "materials": [
+        "L4(1)",
+        "IN4"
+      ]
+    },
+    {
+      "date": "Sep 10, 2025",
+      "type": "lecture",
+      "topic": "Lists, Strings (5.1, 5.2, 5.3)",
+      "materials": [
+        "L5(1)",
+        "IN5"
+      ]
+    },
+    {
+      "date": "Sep 15, 2025",
+      "type": "lecture",
+      "topic": "Recursion (13.2.1 - 13.2.4)",
+      "materials": [
+        "L6(1)"
+      ]
+    },
+    {
+      "date": "Sep 17, 2025",
+      "type": "lecture",
+      "topic": "Recursion (2), Turtle, Tail Recursion",
+      "materials": [
+        "L7(1)",
+        "IN6"
+      ]
+    },
+    {
+      "date": "Sep 22, 2025",
+      "type": "lecture",
+      "topic": "Python Dictionaries, Working with Files (10.1--10.7 Think Python 3rd + slides)",
+      "materials": [
+        "L8(1)",
+        "IN7"
+      ]
+    },
+    {
+      "date": "Sep 24, 2025",
+      "type": "review",
+      "topic": "Review Session",
+      "materials": []
+    },
+    {
+      "date": "Sep 29, 2025",
+      "type": "exam",
+      "topic": "Exam Day",
+      "materials": []
+    },
+    {
+      "date": "Oct 1, 2025",
+      "type": "lecture",
+      "topic": "Python Tuples and Sets (11.1--11.4, 18.1)",
+      "materials": [
+        "L9(1)",
+        "IN8"
+      ]
+    },
+    {
+      "date": "Oct 6, 2025",
+      "type": "lecture",
+      "topic": "Running Time",
+      "materials": [
+        "L10(1)",
+        "IN9"
+      ]
+    },
+    {
+      "date": "Oct 8, 2025",
+      "type": "unscheduled",
+      "topic": null,
+      "materials": []
+    },
+    {
+      "date": "Oct 13, 2025",
+      "type": "no_class",
+      "topic": "No Lecture (Fall Break)",
+      "materials": []
+    },
+    {
+      "date": "Oct 15, 2025",
+      "type": "lecture",
+      "topic": "Searching Algorithms, Testing, Debugging Code",
+      "materials": [
+        "L11(1)",
+        "L11(2)"
+      ]
+    },
+    {
+      "date": "Oct 20, 2025",
+      "type": "lecture",
+      "topic": "Sorting Algorithms (1)",
+      "materials": [
+        "L12(1)",
+        "IN10"
+      ]
+    },
+    {
+      "date": "Oct 22, 2025",
+      "type": "lecture",
+      "topic": "Sorting Algorithms (2)",
+      "materials": [
+        "L13",
+        "IN11"
+      ]
+    },
+    {
+      "date": "Oct 27, 2025",
+      "type": "lecture",
+      "topic": "Object-Oriented Programming Basics",
+      "materials": [
+        "L14",
+        "IN12"
+      ]
+    },
+    {
+      "date": "Oct 29, 2025",
+      "type": "lecture",
+      "topic": "Linked Lists",
+      "materials": [
+        "L15",
+        "IN13"
+      ]
+    },
+    {
+      "date": "Nov 3, 2025",
+      "type": "lecture",
+      "topic": "Stack, Queue",
+      "materials": [
+        "L16",
+        "IN14"
+      ]
+    },
+    {
+      "date": "Nov 5, 2025",
+      "type": "review",
+      "topic": "Review",
+      "materials": [
+        "Ask",
+        "here"
+      ]
+    },
+    {
+      "date": "Nov 10, 2025",
+      "type": "exam",
+      "topic": "Exam Day",
+      "materials": []
+    },
+    {
+      "date": "Nov 12, 2025",
+      "type": "lecture",
+      "topic": "Binary Trees",
+      "materials": [
+        "L17",
+        "IN15"
+      ]
+    },
+    {
+      "date": "Nov 17, 2025",
+      "type": "unscheduled",
+      "topic": null,
+      "materials": []
+    },
+    {
+      "date": "Nov 19, 2025",
+      "type": "lecture",
+      "topic": "Graphs, Definitions, Traversals, BFS, DFS",
+      "materials": []
+    },
+    {
+      "date": "Nov 24, 2025",
+      "type": "unscheduled",
+      "topic": null,
+      "materials": []
+    },
+    {
+      "date": "Nov 26, 2025",
+      "type": "no_class",
+      "topic": "No Lecture (Thanksgiving)",
+      "materials": []
+    },
+    {
+      "date": "Dec 1, 2025",
+      "type": "lecture",
+      "topic": "Hashing, Other advanced topics (time permitting)",
+      "materials": []
+    },
+    {
+      "date": "Dec 3, 2025",
+      "type": "unscheduled",
+      "topic": null,
+      "materials": []
+    },
+    {
+      "date": "Dec 8, 2025",
+      "type": "review",
+      "topic": "Review, Wrap-up, Final Discussions",
+      "materials": []
+    },
+    {
+      "date": "Dec 14, 2025",
+      "type": "exam",
+      "topic": "Final Exam Day",
+      "materials": []
+    }
+  ]
+}

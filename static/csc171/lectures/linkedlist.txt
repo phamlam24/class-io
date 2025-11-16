@@ -1,0 +1,29 @@
+Linked List – Concise Overview
+
+A linked list is a linear data structure made of nodes, where each node contains:
+- data: the stored value
+- next: a reference to the next node (for singly linked lists)
+
+Types:
+1. Singly Linked List – nodes point to the next node only.
+2. Doubly Linked List – nodes have next and prev references.
+3. Circular Linked List – last node points back to the first.
+
+Key operations:
+- insert at head/tail
+- delete a node
+- search for a value
+- traversal
+
+Advantages:
+- Dynamic size
+- Efficient insertions/deletions (O(1) with pointer)
+
+Disadvantages:
+- No random access (O(n) search)
+- Extra memory for pointers
+
+Common uses:
+- Implementing queues/stacks
+- Adjacency lists in graphs
+- Memory-efficient dynamic structures

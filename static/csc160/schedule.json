@@ -1,0 +1,156 @@
+{
+  "course_code": "CSC 160",
+  "title": "Course Schedule",
+  "schedule": [
+    {
+      "date": "Aug 26 (T) 2025",
+      "topic": "Course Introduction: What is Intelligence?",
+      "type": "lecture"
+    },
+    {
+      "date": "Aug 28 (R) 2025",
+      "topic": "AI before Deep Learning (1950--2015)",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 2 (T) 2025",
+      "topic": "The Rise of Deep Learning (2015--2017)",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 4 (R) 2025",
+      "topic": "ChatGPT: Key Milestones (2017--2022)",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 9 (T) 2025",
+      "topic": "Prompt Engineering: Pillars and Fads",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 11 (R) 2025",
+      "topic": "Learning With and Without AI",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 16 (T) 2025",
+      "topic": "Learning Discussion",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 18 (R) 2025",
+      "topic": "Algorithms, Computers, and Python",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 23 (T) 2025",
+      "topic": "The Model Zoo",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 25 (R) 2025",
+      "topic": "Multimodal AI: Images and Audio",
+      "type": "lecture"
+    },
+    {
+      "date": "Sep 30 (T) 2025",
+      "topic": "Reasoning: The Jagged Frontier",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 2 (R) 2025",
+      "topic": "Agents, Tools, and Context",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 7 (T) 2025",
+      "topic": "Project Discussion",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 9 (R) 2025",
+      "topic": "Ethics Primer",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 14 (T) 2025",
+      "topic": "No class (Fall break)",
+      "type": "no_class"
+    },
+    {
+      "date": "Oct 16 (R) 2025",
+      "topic": "Art and Creativity",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 21 (T) 2025",
+      "topic": "Copyright, Fair-use, and Plagiarism",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 23 (R) 2025",
+      "topic": "Healthcare",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 28 (T) 2025",
+      "topic": "Privacy, Regulations, and User Rights",
+      "type": "lecture"
+    },
+    {
+      "date": "Oct 30 (R) 2025",
+      "topic": "Misinformation, Persuasion, and Critical Thinking",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 4 (T) 2025",
+      "topic": "Electricity, Water, and Datacenters",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 6 (R) 2025",
+      "topic": "Jobs",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 11 (T) 2025",
+      "topic": "Law and Government",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 13 (R) 2025",
+      "topic": "Consciousness",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 18 (T) 2025",
+      "topic": "Predicting the Future",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 20 (R) 2025",
+      "topic": "TBD (based on class interest)",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 25 (T) 2025",
+      "topic": "TBD (based on class interest)",
+      "type": "lecture"
+    },
+    {
+      "date": "Nov 27 (R) 2025",
+      "topic": "No class (Thanksgiving)",
+      "type": "no_class"
+    },
+    {
+      "date": "Dec 2 (T) 2025",
+      "topic": "Symposium",
+      "type": "lecture"
+    },
+    {
+      "date": "Dec 4 (R) 2025",
+      "topic": "Symposium",
+      "type": "exam"
+    }
+  ]
+}

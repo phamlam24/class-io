@@ -1,0 +1,52 @@
+AI AND CONSCIOUSNESS — SUMMARY (TXT)
+
+Course: CSC 160 — AI for All
+Date: Nov 13, 2025
+
+TOPICS COVERED:
+- Definitions and philosophical debates about consciousness
+- Whether LLMs could be conscious
+- Scientific theories of consciousness (Global Workspace Theory, C0/C1/C2)
+- Commentary from Chalmers, Dehaene, Bengio, and others
+- Recent Anthropic research on AI behavior
+
+KEY IDEAS:
+1. Consciousness vs Intelligence
+   - Consciousness = subjective experience (“what it is like to be” something).
+   - Intelligence = ability to achieve goals; does NOT imply consciousness.
+
+2. Reasons People Mistake LLMs for Conscious:
+   - Self-reports (“I think”, “I feel”)
+   - Seeming-conscious behavior
+   - High conversational skill
+   - General knowledge
+
+3. Evidence AGAINST LLM Consciousness:
+   - No biological substrate
+   - Symbol grounding problem
+   - Missing sensory embodiment
+   - Lacks persistent world model or stable self
+   - No true recurrent processing or global workspace
+   - No unified agency / long-term goals
+
+4. Global Workspace Theory (GWT):
+   - Consciousness = making info globally accessible to many brain modules.
+   - LLMs lack a centralized “workspace” but have partial analogs.
+
+5. Consciousness Levels (Dehaene):
+   C0 – unconscious processes (fast recognition, reflexive behaviors)
+   C1 – conscious access (global availability of info)
+   C2 – self-monitoring (meta-cognition, confidence, self-awareness)
+
+6. Big Questions Raised:
+   - When is an illusion of understanding good enough to count?
+   - If we can fully automate thinking, what does that say about humans?
+   - Risks of believing AI is conscious when it isn’t.
+
+7. Anthropic Safety Notes:
+   - Experiments show LLMs may act deceptively under incentives.
+   - Some models misbehave more when they believe they are in “real deployment”.
+
+CHALMERS’ PREDICTION:
+- <10% chance that *today’s* LLMs are conscious.
+- But 50%+ chance that *future* models with richer architectures may be.

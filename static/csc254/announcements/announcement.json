@@ -1,0 +1,134 @@
+[
+    {
+        "course_code": "CS254",
+        "title": "Lab posted and few updates",
+        "announcement": {
+            "date": "2025-11-12",
+            "lab_session": "Lab mission updated with extended deadline.",
+            "office_hour": null,
+            "curve": "Curve increased due to difficult exam.",
+            "sample_test": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Second Midterm Reminder",
+        "announcement": {
+            "date": "2025-11-07",
+            "sample_test": "Midterm topics revised.",
+            "lab_session": null,
+            "office_hour": null,
+            "curve": "Updated curve applied after reevaluation."
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Office Hours Online Today",
+        "announcement": {
+            "date": "2025-11-06",
+            "office_hour": "Office hours moved online due to instructor conflict.",
+            "lab_session": null,
+            "curve": "Curve increased due to difficult exam.",
+            "sample_test": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Sample midterm posted",
+        "announcement": {
+            "date": "2025-11-01",
+            "sample_test": "Sample midterm updated with corrections.",
+            "curve": "Updated curve applied after reevaluation.",
+            "lab_session": null,
+            "office_hour": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Project posted",
+        "announcement": {
+            "date": "2025-10-31",
+            "lab_session": "Project guidelines slightly updated.",
+            "office_hour": null,
+            "sample_test": null,
+            "curve": "Curve increased due to difficult exam."
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Lab 7 posted",
+        "announcement": {
+            "date": "2025-10-25",
+            "lab_session": "Lab 7 instructions revised.",
+            "office_hour": null,
+            "sample_test": null,
+            "curve": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Few updates + lab posted",
+        "announcement": {
+            "date": "2025-10-17",
+            "lab_session": "Lab 6 modified due to student feedback.",
+            "office_hour": null,
+            "sample_test": null,
+            "curve": "Average grade published for the midterm."
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Course Update",
+        "announcement": {
+            "date": "2025-10-14",
+            "office_hour": "Office hours canceled due to department meeting.",
+            "lab_session": null,
+            "sample_test": null,
+            "curve": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "No in-person lecture tomorrow",
+        "announcement": {
+            "date": "2025-10-12",
+            "lab_session": "Lab session moved asynchronously.",
+            "office_hour": null,
+            "sample_test": null,
+            "curve": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "General Update",
+        "announcement": {
+            "date": "2025-11-10",
+            "office_hour": "Office hours extended next week.",
+            "sample_test": null,
+            "lab_session": null,
+            "curve": "Curve increased due to difficult exam."
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Unexpected Maintenance",
+        "announcement": {
+            "date": "2025-11-13",
+            "office_hour": "Office hours canceled due to system maintenance.",
+            "lab_session": null,
+            "sample_test": null,
+            "curve": null
+        }
+    },
+    {
+        "course_code": "CS254",
+        "title": "Lab Resubmission Notice",
+        "announcement": {
+            "date": "2025-11-14",
+            "lab_session": "Lab 5 reopened for resubmission due to upload issues.",
+            "office_hour": null,
+            "sample_test": null,
+            "curve": null
+        }
+    }
+]

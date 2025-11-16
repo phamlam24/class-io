@@ -1,0 +1,47 @@
+
+Concurrency – Detailed Summary
+
+This document covers the fundamentals of concurrency, including thread models, synchronization, race conditions, schedulers, and language-level mechanisms for ensuring safe parallel execution.
+
+1. Processes and Threads  
+   - Threads represent units of execution; processes may contain multiple threads.  
+   - Hardware provides cores and hardware threads; OS provides kernel threads; user-level libraries may multiplex many threads.  
+   - Interleaving and true parallelism both introduce nondeterminism.
+
+2. Race Conditions  
+   - A race occurs when program behavior depends on unordered events across threads.  
+   - Data races (unprotected memory accesses) are considered bugs in modern semantics.  
+   - Memory models (in Java, C++) guarantee ordering only in data-race-free programs.
+
+3. Shared Memory vs Message Passing  
+   - Shared-memory concurrency dominates on multicore CPUs.  
+   - Message passing is safer but requires different architectural assumptions.
+
+4. Synchronization  
+   - Mutual exclusion ensures only one thread enters critical sections.  
+   - Condition synchronization ensures threads wait for a condition (buffer full/empty).  
+   - Busy-waiting (spinlocks) appropriate when delays are short; otherwise scheduler-based waiting is better.
+
+5. Atomic Instructions  
+   - Hardware primitives (test-and-set, compare-and-swap, fetch-and-add) enable lock construction.  
+   - Test-and-test-and-set reduces contention by spinning on reads.  
+   - Nonblocking algorithms (lock-free/wait-free) rely heavily on CAS.
+
+6. Semaphores  
+   - Early mechanism introduced by Dijkstra for synchronization.  
+   - Binary semaphores (mutexes) and counting semaphores for resource tracking.  
+   - Fairness assumptions impact scheduling behavior.  
+   - Bounded buffer problem illustrates classical producer-consumer coordination.
+
+7. Monitors  
+   - High-level synchronization construct enforcing mutual exclusion automatically.  
+   - Internal condition variables allow threads to wait/signal.  
+   - Hoare vs Mesa semantics differ on when control is transferred after signaling.
+
+8. Schedulers  
+   - Coroutines: cooperative switching via explicit transfer.  
+   - User-level threads built from coroutines + blocking operations.  
+   - Preemptive scheduling uses timer interrupts.  
+   - Multiprocessor scheduling requires locking the scheduler itself.
+
+Overall, the concurrency material highlights how subtle and error-prone shared-memory parallel programming can be, and why languages provide structured synchronization abstractions.

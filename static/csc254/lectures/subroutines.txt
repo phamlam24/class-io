@@ -1,0 +1,41 @@
+
+Subroutines – Detailed Summary
+
+This document explores the implementation of subroutines, function calls, stack frames, parameter passing, and exception handling. It offers insight into how languages translate high-level procedure calls to low-level machine operations.
+
+1. Runtime Stack and Frames  
+   - Stack frames store bookkeeping info (return address, saved registers), parameters, locals, and temporaries.  
+   - Calling conventions dictate which registers must be saved by the caller or callee.  
+   - Frame pointer (fp) may be optional in optimized code.  
+   - Different architectures (ARM, x86-64) use specialized calling sequences.
+
+2. Parameter Passing Models  
+   - Call by value: formal receives a copy; safe but potentially expensive.  
+   - Call by reference: formal aliases actual; efficient but can produce aliasing issues.  
+   - Value/result: copies into the function and back out afterward.  
+   - Call by sharing (Python, Java object semantics): references are copied, but not objects.  
+   - Call by name (Algol): implemented via thunks; supports lazy-like evaluation.  
+   - Call by need: memoized version of call-by-name (Haskell).
+
+3. Access to Non-local Variables  
+   - Static links connect nested procedures to their defining scopes.  
+   - Closures capture function code and environment pointer.  
+   - Access to k-level-out variables requires traversing k static links.
+
+4. Function Returns  
+   - Languages differ in how return values are specified.  
+   - Named return values (Go, Algol 68) allow assigning to a special variable.  
+   - Modern languages prefer explicit return statements.
+
+5. Exceptions  
+   - Mechanisms for handling abnormal conditions or non-local jumps.  
+   - Exception handlers can appear around blocks or expressions (ML, Common Lisp).  
+   - Propagation unwinds the stack, running destructors (C++).  
+   - Implementations may use stacks of handlers, lookup tables, or setjmp/longjmp (C).
+
+6. Events and Signal Handling  
+   - GUI systems (Java Swing, C# delegates) use events and callbacks.  
+   - Closures or objects encapsulate event-handling behavior.  
+   - Some languages must simulate call sequences with trampolines.
+
+Overall, the subroutines material emphasizes how procedure call mechanisms deeply affect performance, safety, and language semantics.

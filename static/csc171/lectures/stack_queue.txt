@@ -1,0 +1,25 @@
+Stack and Queue – Concise Overview
+
+1. Stack
+A stack is a linear data structure that follows the Last-In, First-Out (LIFO) principle.
+Key operations:
+- push(x): Add an element to the top.
+- pop(): Remove and return the top element.
+- peek/top(): View the top element without removing it.
+Common uses:
+- Function call stack and recursion
+- Undo operations in editors
+- Expression parsing (prefix/infix/postfix)
+
+2. Queue
+A queue is a linear data structure that follows the First-In, First-Out (FIFO) principle.
+Key operations:
+- enqueue(x): Insert an element at the back.
+- dequeue(): Remove and return the front element.
+- front(): View the front element without removing it.
+Common uses:
+- Task scheduling
+- Breadth-first search (BFS)
+- Buffering in data streams
+
+Both structures are fundamental abstractions for controlling order of processing in algorithms and systems.

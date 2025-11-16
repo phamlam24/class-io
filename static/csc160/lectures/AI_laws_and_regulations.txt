@@ -1,0 +1,66 @@
+AI LAWS & REGULATIONS — SUMMARY (TXT)
+
+Course: CSC 160 — AI for All
+Date: Nov 11, 2025
+
+TOPICS:
+- Federal AI laws (current + historical)
+- Executive Orders on AI (Biden + Trump)
+- State-level AI regulations (NY, UT, CA, TN)
+- Legal fault lines: privacy, copyright, minors, safety, transparency
+
+FEDERAL LANDSCAPE:
+- NAIIA (2020): National AI coordination, research goals, committees.
+- Executive Order 14110 (Biden, 2023):
+  - Safety-focused, model vetting, compute thresholds.
+  - Required government evaluation of frontier models.
+  - Rescinded by Trump in 2025.
+
+- Trump Administration (2025):
+  - “Preventing Woke AI” order
+    • Requires LLMs used by government to be truthful, neutral, non-ideological.
+  - “America’s AI Action Plan”
+    • Focus on innovation, infrastructure, national security.
+
+- Congress (118th/119th):
+  - 150+ bills introduced, almost none passed.
+  - Many proposals focus on transparency, national security, copyright.
+
+- “TAKE IT DOWN” Act (2024):
+  - Criminalizes non-consensual intimate imagery (NCII).
+  - Requires platforms to remove NCII within 48 hours.
+
+STATE REGULATIONS:
+New York:
+- LOADinG Act: oversight of automated decision systems in government.
+- AI Companion Limitations: protections for minors using AI companions.
+- RAISE Act: frontier model restrictions (awaiting signature).
+- NY AI Act: large framework (still in committee).
+
+California:
+- Laws addressing:
+  • Algorithmic pricing
+  • Chatbot regulation
+  • Frontier model transparency
+  • Deepfake pornography
+  • Law enforcement use of AI
+  • Healthcare accuracy
+  • Data center energy use
+
+Utah:
+- AI disclosure laws (must notify users when interacting with AI)
+- Identity protections
+- Liability for harmful AI outputs
+
+Tennessee:
+- “ELVIS Act”: prohibits voice cloning of artists without consent.
+
+KEY FAULT LINES:
+- IP/Copyright of AI outputs
+- Deepfakes / NCII
+- Risks to minors from AI companions
+- Privacy & data ownership
+- Algorithmic bias (hiring, lending, policing)
+- National security & compute restrictions
+- Government use of AI
+- Safety + rogue AI concerns

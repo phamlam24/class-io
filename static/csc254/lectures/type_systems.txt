@@ -1,0 +1,54 @@
+
+Type Systems – Detailed Summary
+
+This document explains the theory and practice behind type systems in programming languages, focusing on the purpose of types, how type checking works, and how languages implement type equivalence, coercion, and polymorphism.
+
+1. What Is a Type?  
+   Types may be viewed as:  
+   - Sets of values (mathematical perspective)  
+   - Implementor-defined representations (equivalence classes of objects)  
+   - Data structures described by component layouts (structural perspective)  
+   - A collection of supported operations (abstraction perspective)
+
+2. Goals of a Type System  
+   - Preventing meaningless operations (strong typing)  
+   - Allowing compilers to detect errors early (static typing)  
+   - Enabling optimizations and improving readability  
+   - Supporting polymorphism and overloading resolution
+
+3. Strong vs Static Typing  
+   - Strong typing prevents invalid operations.  
+   - Static typing performs checks at compile time.  
+   - Languages can be strongly but dynamically typed (Python, Lisp).  
+   - Some languages are statically but weakly typed (C).
+
+4. Type Equivalence  
+   - Structural equivalence: types equivalent if they expand to the same shape.  
+   - Name equivalence: types equivalent only if declared in the same place.  
+   - Some languages mix the two (C is structural except for structs; OCaml mostly structural but enforces some name-based distinctions).
+
+5. Type Compatibility and Coercion  
+   - Languages define rules for when values of type A may be used where type B is expected.  
+   - Coercions may be implicit (C, Fortran) or forbidden (Modula-2, Ada).  
+   - Conversions are explicit and may or may not require runtime code.  
+   - Complex coercion rules (especially in C) can lead to surprising behavior.
+
+6. Type Inference  
+   - Simple inference occurs locally (var, auto in modern languages).  
+   - Full Hindley–Milner inference (ML, Haskell) uses unification to determine types across expressions, enforcing consistency.  
+   - Polymorphic type variables allow generic functions without explicit type annotations.
+
+7. Polymorphism and Generics  
+   - Ad-hoc polymorphism (overloading)  
+   - Subtype polymorphism (OO inheritance)  
+   - Parametric polymorphism (generics/templates)  
+   - C++ performs compile-time template instantiation.  
+   - Java uses erasure, losing type info at runtime.  
+   - C# reifies generics, generating specialized code when needed.
+
+8. Advanced Topics  
+   - Type classes (Haskell) enforce constraints over type parameters.  
+   - Typestate tracks allowed operations based on object states.  
+   - Rust lifetimes track reference validity, preventing dangling pointers.
+
+Overall, the type systems material highlights how languages balance safety, performance, and expressiveness through their type-checking rules.
