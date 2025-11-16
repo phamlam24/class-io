@@ -1,15 +1,15 @@
 # ClassIO - MCP Server for Course Management
 
-A Model Context Protocol (MCP) server that provides AI assistants with access to course schedules, exams, announcements, lecture notes, and integrations with Notion and Google Calendar.
+A modular Model Context Protocol (MCP) server that provides AI assistants with access to course schedules, exams, announcements, lecture notes, and integrations with Notion and Google Calendar.
 
 ## Features
 
 - **Course Schedule Management**: Query upcoming exams, lectures, and assignments
-- **Lecture Summaries**: Access and search through lecture notes
+- **Lecture Summaries**: Access and search through lecture notes with fuzzy matching
 - **Announcements**: Check latest course announcements
 - **Notion Integration**: Write notes and content to Notion pages
 - **Google Calendar**: Add meetings and events via n8n webhook
-- **Smart Fuzzy Matching**: Find lectures even with approximate names
+- **Modular Architecture**: Clean, maintainable codebase with separation of concerns
 
 ## Prerequisites
 
@@ -155,7 +155,7 @@ Find the 3 most recent lectures before a given date.
 **Example**: "What topics did we cover recently in CSC160?"
 
 ### 4. `summarize_lectures`
-Get detailed content from a specific lecture.
+Get detailed content from a specific lecture using fuzzy name matching.
 
 **Example**: "Give me a summary of the data structures lecture"
 
@@ -179,7 +179,33 @@ Check recent announcements for a class.
 ```
 ClassIO/
 ├── src/
-│   └── index.ts          # Main MCP server implementation
+│   ├── index.ts                    # Entry point
+│   ├── server.ts                   # Express & MCP server setup
+│   ├── config/
+│   │   └── environment.ts          # Environment variables & validation
+│   ├── types/
+│   │   ├── schedule.ts             # Schedule/exam type definitions
+│   │   ├── announcement.ts         # Announcement type definitions
+│   │   ├── lecture.ts              # Lecture type definitions
+│   │   └── index.ts                # Type exports
+│   ├── utils/
+│   │   ├── constants.ts            # Paths & constants
+│   │   ├── string-similarity.ts    # Fuzzy matching utilities
+│   │   ├── file-operations.ts      # File reading utilities
+│   │   └── index.ts                # Utility exports
+│   ├── services/
+│   │   ├── notion-service.ts       # Notion API integration
+│   │   ├── webhook-service.ts      # N8N webhook integration
+│   │   └── index.ts                # Service exports
+│   └── tools/
+│       ├── get-next-course-exam.ts
+│       ├── get-all-course-next-exam.ts
+│       ├── find-closest-lectures.ts
+│       ├── summarize-lectures.ts
+│       ├── notion-write.ts
+│       ├── google-calendar.ts
+│       ├── latest-announcement-check.ts
+│       └── index.ts                # Tool registry
 ├── static/
 │   ├── csc160/
 │   │   ├── schedule.json
@@ -187,11 +213,29 @@ ClassIO/
 │   │   └── lectures/
 │   ├── csc171/
 │   └── csc254/
-├── build/                # Compiled JavaScript
-├── .env                  # Environment variables (not tracked)
-├── .env.example          # Environment template
+├── build/                          # Compiled JavaScript
+├── .env                            # Environment variables (not tracked)
+├── .env.example                    # Environment template
 └── package.json
 ```
+
+## Architecture
+
+The codebase follows a modular architecture with clear separation of concerns:
+
+- **`config/`**: Environment configuration and validation
+- **`types/`**: TypeScript type definitions for type safety
+- **`utils/`**: Shared utility functions (string matching, file operations, constants)
+- **`services/`**: External API integrations (Notion, webhooks)
+- **`tools/`**: Individual MCP tool implementations
+- **`server.ts`**: Express and MCP server configuration
+- **`index.ts`**: Application entry point
+
+This structure makes the codebase:
+- **Maintainable**: Each module has a single responsibility
+- **Testable**: Components can be tested in isolation
+- **Scalable**: Easy to add new tools or services
+- **Type-safe**: Centralized type definitions prevent errors
 
 ## Adding New Courses
 
@@ -219,12 +263,44 @@ ClassIO/
 3. (Optional) Add lecture notes in `lectures/` as `.txt` files
 4. (Optional) Add announcements in `announcements/announcement.json`
 
-## Security Notes
+## Adding New Tools
 
-- **Never commit `.env`** - it contains sensitive credentials
-- **Rotate credentials** after making the repository public
-- **Use ngrok auth** for production deployments
-- **Limit ngrok session time** for temporary access
+Thanks to the modular architecture, adding a new tool is straightforward:
+
+1. **Create a new file** in `src/tools/` (e.g., `my-new-tool.ts`)
+2. **Implement the tool**:
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod";
+
+export function registerMyNewTool(server: McpServer): void {
+  server.registerTool(
+    "my_new_tool",
+    {
+      title: "My New Tool",
+      description: "Description of what the tool does",
+      inputSchema: z.object({
+        param: z.string().describe("Parameter description"),
+      }),
+    },
+    async (args) => {
+      // Tool implementation
+      return {
+        content: [{ type: "text", text: "Result" }],
+      };
+    },
+  );
+}
+```
+3. **Register the tool** in `src/tools/index.ts`:
+```typescript
+import { registerMyNewTool } from "./my-new-tool.js";
+
+export function registerAllTools(server: McpServer): void {
+  // ... existing tools
+  registerMyNewTool(server);
+}
+```
 
 ## Development
 
@@ -243,11 +319,19 @@ npm run watch
 npm run inspector
 ```
 
+## Security Notes
+
+- **Never commit `.env`** - it contains sensitive credentials
+- **Rotate credentials** after making the repository public
+- **Use ngrok auth** for production deployments
+- **Limit ngrok session time** for temporary access
+
 ## Troubleshooting
 
 ### Server won't start
 - Check that port 8000 is not already in use
 - Verify all environment variables are set in `.env`
+- Run `npm run build` to ensure compilation is successful
 
 ### Notion integration not working
 - Ensure you've shared your Notion pages with the integration
