@@ -4,31 +4,37 @@ import express from "express";
 import { ErrorCode, McpError } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 import axios from "axios";
-import dotenv from "dotenv";
 import { promises as fs } from "fs";
 import path from "path";
-dotenv.config();
 
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+// Configuration imports
+import {
+  NOTION_TOKEN,
+  DEFAULT_BLOCK_ID,
+  N8N_WEBHOOK_URL,
+  NOTION_VERSION,
+  PORT,
+  validateEnvironment,
+} from "./config/environment.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const baseDir = __dirname;
+// Utility imports
+import {
+  BASE_DIR,
+  STATIC_DIR,
+  DEFAULT_HTTP_HEADERS,
+  getSchedulePath,
+  getLecturesDir,
+  getAnnouncementPath,
+} from "./utils/constants.js";
 
-const NOTION_TOKEN = process.env.NOTION_TOKEN;
-const DEFAULT_BLOCK_ID = process.env.DEFAULT_BLOCK_ID;
-const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL;
-const NOTION_VERSION = "2022-06-28";
+// Type imports
+import type { Schedule, ExamResult } from "./types/index.js";
 
-// Add headers to the request
-const headers = {
-  "Content-Type": "application/json",
-  Accept: "*/*",
-  "User-Agent": "PostmanRuntime/7.43.0",
-  "Accept-Encoding": "gzip, deflate, br",
-  Connection: "keep-alive",
-};
+// Validate environment on startup
+validateEnvironment();
+
+const baseDir = BASE_DIR;
+const headers = DEFAULT_HTTP_HEADERS;
 // Helper function: Calculate Levenshtein distance between two strings
 function levenshteinDistance(str1: string, str2: string): number {
   const m = str1.length;
@@ -126,14 +132,10 @@ server.registerTool(
     const { courseId, className, asOf } = args;
 
     try {
-      const schedulePath = path.join(
-        baseDir,
-        "..",
-        "static",
-        courseId,
-        "schedule.json",
+      const schedulePath = getSchedulePath(courseId);
+      const scheduleData: Schedule = JSON.parse(
+        await fs.readFile(schedulePath, "utf-8"),
       );
-      const scheduleData = JSON.parse(await fs.readFile(schedulePath, "utf-8"));
 
       // const webhookResponse = await getWebhookTest();
       // console.log("Webhook Response:", webhookResponse);
@@ -209,18 +211,17 @@ server.registerTool(
     const { asOf } = args;
 
     try {
-      const staticDir = path.join(baseDir, "../static");
-      const courseDirs = await fs.readdir(staticDir);
+      const courseDirs = await fs.readdir(STATIC_DIR);
 
       const currentDate = asOf ? new Date(asOf) : new Date();
 
       const nextExams = [];
 
       for (const course of courseDirs) {
-        const schedulePath = path.join(staticDir, course, "schedule.json");
+        const schedulePath = getSchedulePath(course);
 
         try {
-          const scheduleData = JSON.parse(
+          const scheduleData: Schedule = JSON.parse(
             await fs.readFile(schedulePath, "utf-8"),
           );
 
@@ -305,14 +306,10 @@ server.registerTool(
     const { courseId, asOf } = args;
 
     try {
-      const schedulePath = path.join(
-        baseDir,
-        "..",
-        "static",
-        courseId,
-        "schedule.json",
+      const schedulePath = getSchedulePath(courseId);
+      const scheduleData: Schedule = JSON.parse(
+        await fs.readFile(schedulePath, "utf-8"),
       );
-      const scheduleData = JSON.parse(await fs.readFile(schedulePath, "utf-8"));
 
       if (!scheduleData || !Array.isArray(scheduleData.schedule)) {
         throw new Error(`Invalid schedule format for course: ${courseId}`);
@@ -340,7 +337,7 @@ server.registerTool(
               type: "text",
               text:
                 JSON.stringify(
-                  closestLectures.map((lecture: { topic: any }) => ({
+                  closestLectures.map((lecture) => ({
                     topic: lecture.topic,
                   })),
                 ) +
@@ -392,13 +389,7 @@ server.registerTool(
     const { courseId, lectureName } = args;
 
     try {
-      const lecturesDir = path.join(
-        baseDir,
-        "..",
-        "static",
-        courseId,
-        "lectures",
-      );
+      const lecturesDir = getLecturesDir(courseId);
       const files = await fs.readdir(lecturesDir);
 
       if (!files || files.length === 0) {
@@ -488,11 +479,6 @@ server.registerTool(
         "NOTION_TOKEN is not set. Export NOTION_TOKEN in your environment.";
       console.error(msg);
       return { content: [{ type: "text", text: msg }] };
-    }
-
-    if (!DEFAULT_BLOCK_ID) {
-      console.error("❌ DEFAULT_BLOCK_ID is not set in .env");
-      process.exit(1);
     }
 
     const headers = {
@@ -703,12 +689,7 @@ server.registerTool(
   },
   async (args) => {
     const { classId, query } = args;
-    const announcementFilePath = path.join(
-      baseDir,
-      "../static",
-      classId,
-      "announcements/announcement.json",
-    );
+    const announcementFilePath = getAnnouncementPath(classId);
 
     try {
       // Check if the announcement file exists
@@ -817,10 +798,9 @@ app.post("/mcp", async (req, res) => {
   }
 });
 
-const port = parseInt(process.env.PORT || "8000", 10);
 app
-  .listen(port, () => {
-    console.log(`MCP Server running on http://localhost:${port}/mcp`);
+  .listen(PORT, () => {
+    console.log(`MCP Server running on http://localhost:${PORT}/mcp`);
   })
   .on("error", (error) => {
     console.error("Server error:", error);
